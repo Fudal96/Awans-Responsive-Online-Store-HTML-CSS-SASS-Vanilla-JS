@@ -1,0 +1,271 @@
+.deals-for-you {
+    width: 90vw;
+    margin: auto;
+    @include mqMin(1024px) {
+        display: none;
+    }
+}
+.deals-for-you p {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 4%;
+}
+
+.deals-for-you-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    
+}
+
+.deals-for-you-grid img {
+    width: 100%;
+}
+.gaming-season {
+    margin-top: 25px;
+}
+.gaming-season img {
+    width: 100%;
+}
+
+.sale-of-the-day {
+   position: relative;
+    width: 100%;
+    border: 2px solid grey;
+    min-height: 390px;
+    margin-top: 12px;
+    @include mqMin(600px) {
+        min-height: 420px;
+    }
+    @include mqMin(768px) {
+        min-height: 450px;
+    }
+    @include mqMin(790px) {
+        min-height: 470px;
+    }
+    @include mqMin(845px) {
+        min-height: 515px;
+    }
+    @include mqMin(1000px) {
+        min-height: 535px;
+    }
+}
+.sale-of-the-day-top img {
+    width: 43%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.sale-of-the-day-top p {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 5%;
+    @include mqMin(500px) {
+        font-size: 16px;
+    }
+    @include mqMin(600px) {
+        font-size: 17px;
+    }
+    @include mqMin(700px) {
+        font-size: 18px;
+    }
+    @include mqMin(768px) {
+        font-size: 20px;
+    }
+    @include mqMin(900px) {
+        font-size: 22px;
+    }
+}
+
+.sale-of-the-day-middle {
+    display: grid;
+    grid-template-columns: repeat(2, 50% 45%);
+    gap: 0px;
+}
+
+.keyboard-img img {
+    width: 80%;
+    margin-top: 25%;
+    margin-left: 10%;
+    @include mqMax(375px) {
+        width: 70%;
+    }
+    @include mqMin(493px) {
+        margin-top: 14%;
+    }
+    @include mqMin(546px) {
+        margin-top: 7%;
+    }
+    @include mqMin(669px) {
+        margin-top: 0%;
+    }
+}
+
+.keyboard-price {
+    margin-top: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include mqMax(375px) {
+        margin-right: 4%;
+    }
+    @include mqMin(768px) {
+        margin-top: 0;
+    }
+    
+}
+.keyboard-current-price {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.OOzl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.OO {
+    font-weight: bold;
+    letter-spacing: -0.7px;
+    margin-top: 20%;
+    font-size: 16px;
+    @include mqMin(768px) {
+        font-size: 23px;
+    }
+}
+.zl {
+    font-weight: bold;
+    margin-bottom: 30%;
+    @include mqMin(768px) {
+        font-size: 23px;
+    }
+}
+.cheaper-div {
+    position:relative;
+    border: 1px solid black;
+    max-width:max-content;
+    padding: 0.28rem 0.50rem;
+    border-radius: 2.5px;
+    margin-bottom: 5px;
+}
+.cheaper-div::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    bottom: -25%;
+    left: 10%;
+    background: white;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(45deg);
+    @include mqMin(600px) {
+        bottom: -20%;
+    }
+     @include mqMin(768px) {
+        bottom: -15%;
+    }
+}
+.cheaper {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    @include mqMax(375px) {
+        font-size: 13px;
+        letter-spacing: 0.1px;
+    }
+    @include mqMin(600px) {
+        font-size: 20px;
+    }
+    @include mqMin(768px) {
+        font-size: 30px;
+    }
+}
+.cheaper-by {
+    color: #FF6000;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    @include mqMax(375px) {
+        font-size: 15px;
+        letter-spacing: 0.1px;
+    }
+    @include mqMin(600px) {
+        font-size: 20px;
+    }
+    @include mqMin(768px) {
+        font-size: 30px;
+    }
+}
+.sixnine {
+    font-size: 38px;
+    color: #FF6000;
+    font-weight: bold;
+    @include mqMin(768px) {
+        font-size: 56px;
+    }
+}
+.previous-price {
+    position: relative;
+    font-size: 16px;
+    @include mqMin(768px) {
+        font-size: 28px;
+    }
+}
+.previous-price::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 0;
+}
+
+.deals-time-left {
+    position: absolute;
+    bottom: 50px;
+    left: auto;
+    width: 100%;
+    margin-left: 12px;
+    @include mqMin(900px) {
+        margin-left: 40px;
+    }
+}
+
+.deals-time-left-span span {
+    font-size: 24px;
+    font-weight: 600;
+    color: $orangecolor;
+    @include mqMin(768px) {
+        font-size: 30px;
+    }
+}
+.deals-counter {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+    @include mqMin(768px) {
+        font-size: 34px;
+    }
+    
+
+    .deals-counter-days {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid gray;
+        padding: 3px 6px;
+    }
+
+    .deals-counter-span {
+        font-size: 12px;
+    }
+}

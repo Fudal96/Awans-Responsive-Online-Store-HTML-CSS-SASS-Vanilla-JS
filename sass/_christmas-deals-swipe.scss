@@ -1,0 +1,73 @@
+.section-with-carousel-two {
+    margin-top: 30px;
+   @include mqMin(400px) {
+        margin-left: 12px;
+    }
+    @include mqMin(410px) {
+        margin-left: 20px;
+    }
+    @include mqMin(435px) {
+        margin-left: 30px;
+    }
+    @include mqMin(435px) {
+        margin-left: 40px;
+    }
+    @include mqMin(620px) {
+      margin-left: 0;
+  }
+  @include mqMin(880px) {
+    margin-left: 50px;
+}
+@include mqMin(950px) {
+  margin-left: 80px;
+}
+    @include mqMin(1024px) {
+        display: none;
+    }
+}
+
+.section-with-carousel-two .swiper-slide figure {
+    position: relative;
+    overflow: hidden;
+  }
+   
+  .section-with-carousel-two .swiper-slide img {
+    
+   width: 260px;
+   height: 130px;
+   @include mqMin(768px) {
+    width: 300px;
+    height: 150px;
+   }
+    /*object-fit:none;*/
+  }
+   
+
+figure {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+   
+  .section-with-carousel-two .carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+  }
+   
+  .section-with-carousel-two .carousel-controls .carousel-control {
+    opacity: 0.25;
+    transition: opacity 0.3s;
+  }
+   
+  .section-with-carousel-two .carousel-controls .carousel-control:hover {
+    opacity: 1;
+  }

@@ -1,0 +1,22 @@
+.pop-up {
+   display: none;
+   position: fixed;
+   top:15px;
+   right:15px;
+   z-index: 111111;
+   
+
+   .add-to-basket-pop-up{
+    padding: 5px 5px;
+    background-color: $orangecolor;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    transition: ease-in-out 3s all;
+    
+   }
+}
+
+.pop-up.active {
+    display: flex;
+}

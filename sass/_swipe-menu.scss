@@ -1,0 +1,89 @@
+
+.section-with-carousel {
+    margin-top: 30px;
+    @include mqMin(1024px) {
+        display: none;
+    }
+}
+
+.section-with-carousel .swiper-slide figure {
+    position: relative;
+    overflow: hidden;
+  }
+   
+  .section-with-carousel .swiper-slide img {
+    
+    height: 80px;
+    width: 80px;
+    background: none;
+    @include mqMin(768px) {
+        height: 100px;
+        width: 100px;
+    }
+    @include mqMin(868px) {
+        height: 110px;
+        width: 110px;
+    }
+    @include mqMin(925px) {
+        height: 120px;
+        width: 120px;
+    }
+    /*object-fit:none;*/
+  }
+   
+  
+figure span {
+    font-size: 12px;
+    @include mqMin(768px) {
+        font-size: 14px;
+    }
+    @include mqMin(925px) {
+        font-size: 15px;
+    }
+}
+
+figure {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+   
+  .section-with-carousel .carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    z-index: 1;
+  }
+   
+  .section-with-carousel .carousel-controls .carousel-control {
+    opacity: 0.25;
+    transition: opacity 0.3s;
+  }
+   
+  .section-with-carousel .carousel-controls .carousel-control:hover {
+    opacity: 1;
+  }
+   
+ /* @media (min-width: 340px) {
+    .section-with-carousel .swiper-slide img {
+        height: 110px;
+        width: 110px;
+    }
+  }
+   
+  @media (min-width: 1200px) {
+    .section-with-carousel .swiper-slide img {
+      height: 420px;
+    }
+     
+    .section-with-carousel .carousel-controls {
+      padding: 0 50px;
+    }
+  }*/

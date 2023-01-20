@@ -1,0 +1,27 @@
+.footer-container-desktop {
+    padding: 10px 5px;
+    margin-top: 65px;
+    background-color: $bluecolor;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include mqMax(1023px) {
+        display: none;
+    }
+
+    .copyright-desktop {
+        font-size: 13px;
+        margin-bottom: 13px;
+        font-weight: 200;
+        padding-top: 20px;
+    }
+
+   
+    .company-info-desktop {
+        font-size: 13px;
+        font-weight: 100;
+        padding-bottom: 15px;
+    }
+}

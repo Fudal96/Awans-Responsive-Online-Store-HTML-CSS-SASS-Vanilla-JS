@@ -1,0 +1,54 @@
+.trust-desktop {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 150px;
+    @include mqMax(1023px) {
+        display: none;
+    }
+
+    .trust-desktop-p {
+        font-size: 23px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-left: 6%;
+    }
+
+    .trust-container {
+        width: 80%;
+        height: 295px;
+        margin-left: 3%;
+        //border: 1px solid red;
+        display: flex;
+        margin-top: 45px;
+        margin-bottom: 60px;
+        gap: 130px;
+       
+    }
+
+    .trust-container-content {
+        flex-basis: 25%;
+        padding: 20px 20px;
+        //border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .trust-container-content p {
+       // border: 1px solid black;
+       margin-top: 5px;
+        width: 80%;
+        font-weight: 600;
+        transform: translateX(10%);
+    }
+
+    hr {
+        width: 85%;
+        margin: auto;
+    }
+
+    .reviews-container {
+        margin-top: 45px;
+    }
+}

@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/css/style.min.css" rel="stylesheet">
+    <script defer src="./js/main.js" type="module"></script>
+    <script defer src="./js/smartphones.js"></script>
+    <script defer src="./js/carousel.js"></script>
+    <script defer src="./js/countdown.js"></script>
+    <script defer src="./js/christmas-deals-swipe.js"></script>
+    <script defer src="./js/hamburger-menu.js"></script>
+    <script defer src="./js/desktop-categories.js"></script>
+    <script defer src="./js/desktop-swiper.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>AWANS | Sklep Internetowy</title>
+</head>
+<body>
+  <main id="main-body">
+    <section class="header">
+        <div class="menu-header">
+            <div class="hamburger-menu" id="hamburger-menu">
+            <img class="hamburger-img" src="./images/menu-svgrepo-com.svg">
+            </div>
+            <div class="logo">
+                <div class="logo-img">
+                <!--<img src="./images/logo@2x.webp">-->
+                <img src="images3/logo_2x222-removebg-preview.png">
+                </div>
+            </div>
+            <div class="user-cart">
+                <div class="user" id="user">
+                <img class="user-img" id="user-img" src="./images/user-svgrepo-com (1).svg">
+            </div>
+            <div class="cart" id="cart">
+                <img class="cart-img" src="./images/shopping-cart-svgrepo-com.svg" id="cart-img">
+                <div class="cart-info" id="cart-info">
+                  <span></span>
+                </div>
+                
+            </div>
+            </div>
+            <div class="inside-the-cart" id="insideTheCart">
+              <div class="inside-the-cart-container" id="inside-the-cart-container">
+                <div class="products-inside" id="products-inside">
+                  Brak produktów w koszyku...
+                 <!--<div class="product-row" id="product-row">
+                  <span class="quantity-of-the-product" id="quantity-of-the-product">2 x</span>
+                  <p class="title-of-the-product" id="title-of-the-product">Huawei P20 Lite</p>
+                  <span class="price-of-the-product" id="price-of-the-product">22250.00 zł</span>
+                  <button class="remove-product" id="remove-product">x</button>
+                 </div> -->
+                                
+                </div>
+                <hr>
+                <div class="value-and-proceed" id="value-and-proceed">
+                  <div class="value-row" id="value-row">
+                    <span class="total-value-of-products" id="total-value-of-products">Łączna wartość produktów</span> 
+                      <span class="total-value" id="total-value">0.00 zł</span>
+                  </div> 
+                  <div class="proceed-to-cart" id="proceed-to-cart">
+                    <button class="button proceed-to-cart" id="button-proceed-to-cart">Przejdź do koszyka</button>
+                  </div>
+                </div>
+              </div> 
+            </div> 
+            <div class="hamburger-menu-show" id="hamburger-menu-show">
+              <div class="hamburger-menu-container">
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>TV,Audio i RTV</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                  <div class="menu-category-show-more">
+                    <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>TELEWIZORY</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>SŁUCHAWKI</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>GŁOŚNIKI BLUETOOTH</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>POWER AUDIO</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>SOUNDBARY</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>KINA DOMOWE</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>DROBNY SPRZĘT RTV</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>PROJEKTORY</span>
+                  </button>
+                  </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>AGD</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                  <div class="menu-category-show-more">
+                    <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>LODÓWKI</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>ZAMRAŻARKI</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>PRALKI</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>SUSZARKI</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>KUCHENKI</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>ZMYWARKI</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>OKAPY</span>
+                  </button>
+                  </div>
+                  <div class="menu-category-show-more-container">
+                    <button class="menu-category-button-show-more">
+                      <span>AGD PRZEMYSŁOWE</span>
+                  </button>
+                  </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>AGD do zabudowy</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>AGD małe</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>Komputery i tablety</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>Smartfony i telefony</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>Foto i kamery</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>Konsole i gry</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>Rowery</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>Fitness i sport</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>Dom i ogród</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-category">
+                  <button class="menu-category-button" id="menu-category-button">
+                    <span>Zabawki i LEGO</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </button>
+                </div>
+                <hr>
+                <div class="menu-hamburger-close" id="menu-hamburger-close">
+                  <div class="close-hamburger">
+                    <button>X</button>
+                  </div>
+                </div> 
+              </div>
+            </div>
+        </div> 
+    </section>
+    
+    <section class="search-container">
+        <form id="search-bar" class="search-bar" role="search">
+            <input id="search-bar-input" type="text" role="searchbox" placeholder="Szukaj w sklepie" autocomplete="off">
+            <button id="search-button" class="search-button" type="submit" aria-label="submit button">
+                <i class="fas fa-search blue"></i>
+            </button>
+        </form>
+    </section>
+    <section class="search-results" id="search-results">
+      <div class="search-results-container">
+     <div class="search-results-product">
+      <a href="#"> <!--<img src="./images/iphone-13.jpg">
+          <p>IPHONE 13</p>
+          <span>5200.00 zł</span>-->
+        </a>  </div>
+      </div>
+    </section>
+    <section class="store-info-container">
+        <div class="store-info">
+        <div class="info-1">
+            <div class="info">
+            <img src="./images/shipping-svgrepo-com.svg">
+            <span class="store-info-text">Darmowy</span><span class="store-info-text-2">transport</span>
+        </div>
+            </div>
+            <div class="info-1-wider">
+                <div class="info">
+                <img src="images/down-arrow-svgrepo-com.svg">
+                <span class="store-info-text">Gwarancja</span><span class="store-info-text-2">lepszej ceny</span>
+            </div>
+                </div>
+                <div class="info-1">
+                    <div class="info">
+                    <img src="images/lock-svgrepo-com.svg">
+                    <span class="store-info-text">Bezpieczne</span><span class="store-info-text-2">zakupy</span> 
+                </div>
+                    </div>
+                    <div class="info-1">
+                        <div class="info">
+                        <img src="images/clock-svgrepo-com.svg">
+                        <span class="store-info-text">Dostawa</span> <span class="store-info-text-2">jutro</span>
+                    </div>
+                        </div>
+            
+                
+    </div>
+    </section>
+    <section class="slider">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><a href="#"><img src="images/avans_sg_855x433.webp"></a>
+               </div>
+              <div class="swiper-slide"><a href="#"><img src="images/AVANS_sg_855x433 (1).webp"></a>
+                 </div>
+                <div class="swiper-slide"><a href="#"><img src="images/avans3_sg_855x433 (2).webp"></a>
+                    </div>
+                    
+             
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>    
+          </div>
+    </section>
+    <section class="categories-container">
+        <div class="categories">
+            <div class="category">
+                <img class="tv" src="images/tv-svgrepo-com (1).svg">
+                <span class="category-name">TV,Audio i RTV</span>
+            </div>
+            <div class="category">
+                <img class="agd" src="./images/washing-machine-svgrepo-com.svg">
+                <span class="category-name">AGD</span>
+            </div>
+            <div class="category">
+                <img class="agd-do-zabudowy" src="./images/cooker-svgrepo-com.svg">
+                <span class="category-name">AGD do</span><span class="category-name-2">zabudowy</span>
+            </div>
+            <div class="category">
+                <img class="agd-małe" src="images/coffee-maker-svgrepo-com.svg">
+                <span class="category-name">AGD małe</span>
+            </div>
+            <div class="category">
+                <img class="komputer" src="images/laptop-svgrepo-com.svg">
+                <span class="category-name">Komputery i</span><span class="category-name-2">tablety</span>
+            </div>
+            <div class="category">
+                <img class="smartfony" src="images/smartphone-svgrepo-com (1).svg">
+                <span class="category-name">Smartfony i</span><span class="category-name-2">zegarki</span>
+            </div>
+            <div class="category">
+                <img class="foto" src="images/camera-svgrepo-com.svg">
+                <span class="category-name">Foto i kamery</span>
+            </div>
+            <div class="category">
+                <img class="gaming" src="images/controller-game-joystick-sport-gaming-svgrepo-com.svg">
+                <span class="category-name">Gaming</span>
+            </div>
+            <div class="category">
+                <img class="rowery" src="./images/bicycle-bike-svgrepo-com.svg">
+                <span class="category-name">Rowery i</span><span class="category-name-2">hulajnogi</span>
+            </div>
+            <div class="category">
+                <img class="fitness" src="images/man-running-svgrepo-com.svg">
+                <span class="category-name">Fitness i sport</span>
+            </div>
+            <div class="category">
+                <img class="dom" src="images/house-svgrepo-com.svg">
+                <span class="category-name">Dom i ogród</span>
+            </div>
+            <div class="category">
+                <img class="zabawki" src="images/lego-svgrepo-com.svg">
+                <span class="category-name">Zabawki i LEGO</span>
+            </div>
+            <div class="category">
+                <img class="outlet" src="images/promotion-svgrepo-com.svg">
+                <span class="category-name">Outlet</span>
+            </div>
+            <div class="category">
+                <img class="promocje" src="images/sale-svgrepo-com.svg">
+                <span class="category-name">Promocje</span>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <!--SWIPE MENU ROUND IMAGES --------------------->
+
+        
+    <section class="section-with-carousel section-with-right-offset position-relative mt-5">
+       
+        <div class="carousel-wrapper">
+          <div class="swiper-carousel">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/kolka2.jpg" alt="">
+                  <span><center>Trzeci za 1 zł - </center><center>środki </center><center>czystości </center><center>taniej</center></span>
+                 
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/apple.jpg" alt="">
+                  <span><center>Autoryzowany</center></span><span><center>sprzedawca</center></span><span><center>Apple</center></span>
+                 
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/ekspresy.jpg" alt="">
+                  <span><center>Ranking</center></span><span><center>ekspresów</center></span>
+                  
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/koko_prezent_v2.jpg" alt="">
+                  <span><center>Miliony</center></span><span><center>prezentów,</center></span><span><center>miliony</center></span><span><center>uśmiechów!</center></span>
+                  
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/kontra-25.jpg" alt="">
+                  <span><center>-25% na drugi</center></span><span><center>produkt lub</center></span><span><center>piąty za 1zł</center></span>
+                 
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/laptopy.jpg" alt="">
+                  <span><center>Laptopy i</center><center>komputery w</center><center>limitowanych</center><center>ilościach</center></span>
+                 
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/lego.jpg" alt="">
+                  <span><center>Twoje ulubione</center></span><span><center>zestawy LEGO</center></span>
+                 
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/nintendo.jpg" alt="">
+                  <span><center>Nintendo</center></span><span><center>Switch Taniej!</center></span>
+                  
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/nvidia.jpg" alt="">
+                  <span><center>Strefa NVIDIA</center></span>
+                  
+                </figure>
+              </div>
+              <div class="swiper-slide">
+                <figure>
+                  <img src="roundimages/odkurzacz.jpg" alt="">
+                  <span><center>Odkurzacze</center></span><span><center>pionowe i</center></span><span><center>roboty</center></span>
+                 
+                </figure>
+              </div>
+              <!-- more slides here -->
+            </div>
+          </div>
+        </div>
+        
+      </section>
+       
+     
+       
+      <section class="section-with-carousel section-with-left-offset position-relative mt-5">
+        
+      </section>
+
+  <!----------christmas deals swipe------------->
+
+  <section class="section-with-carousel-two section-with-right-offset position-relative mt-5">
+       
+    <div class="carousel-wrapper">
+      <div class="swiper-christmas-deals">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+           <figure>
+              <img src="images3/_promo_sg-310x155.jpg" alt="">
+             
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="images3/_promo_sg-310x155_new.jpg" alt="">
+              
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="images3/_promo_sg-310x155 (1).jpg" alt="">
+              
+              
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="images3/smartwatche-i-smartbandy_promo_sg-310x155.jpg" alt="">
+              
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure>
+              <img src="images3/glosnik_promo_sg-310x155.jpg" alt="">           
+            </figure>
+          </div>
+           
+        </div>
+      </div>
+    </div>
+    
+    
+  </section>
+   
+ 
+   
+  <section class="section-with-carousel-two section-with-left-offset position-relative mt-5">
+    
+  </section>
+   <!----------promocje dla ciebibe------------->
+
+   <section class="deals-for-you">
+    <p>Prezenty dla Ciebie</p>
+    <div class="deals-for-you-grid">
+      <img src="./images3/crm-1_me_500x230.jpg">
+      <img src="./images3/crm-1_me_500x230 (1).jpg">
+      <img src="./images3/crm-1_me_500x230 (2).jpg">
+      <img src="./images3/top_500.jpg">
+    </div>
+    <div class="gaming-season">
+      <img src="./images3/_promo_sg-sredni-2_me_380x172_2.jpg">
+    </div>
+    <div class="sale-of-the-day">
+      <div class="sale-of-the-day-top">
+        <img src="./images3/hit-dnia.webp">
+        <p>Klawiatura MAD DOG GK700 RGB</p>
+      </div>
+      <div class="sale-of-the-day-middle">
+        <div class="keyboard-img">
+          <img src="./images3/Klawiatura-MAD-DOG-GK700-RGB-front-podswietlenie.jpg">
+        </div>
+        <div class="keyboard-price">
+          <div class="cheaper-div">
+          <span class="cheaper">Taniej o </span><span class="cheaper-by">80,99 zł</span>
+        </div>
+          <div class="keyboard-current-price">
+            <span class="sixnine">69</span>
+            <div class="OOzl">
+              <span class="OO">00</span>
+              <span class="zl">zł</span>
+            </div>
+          </div>
+          <span class="previous-price">149,99</span>
+        </div>
+          <div class="deals-time-left">
+            <div class="deals-time-left-span">
+              <span>Promocja kończy się za:</span>
+            </div>
+            <div class="deals-counter" id="deals-counter">
+              <div class="deals-counter-days">
+                <div class="deals-counter-days-number"></div>
+                <div class="deals-counter-span">dni</div>
+              </div>
+              <div class="colon">:</div>
+              <div class="deals-counter-days">
+                <div class="deals-counter-hours-number"></div>
+                <div class="deals-counter-span">godz.</div>
+              </div>
+              <div class="colon">:</div>
+              <div class="deals-counter-days">
+                <div class="deals-counter-minutes-number"></div>
+                <div class="deals-counter-span">min.</div>
+              </div>
+              <div class="colon">:</div>
+              <div class="deals-counter-days">
+                <div class="deals-counter-seconds-number"></div>
+                <div class="deals-counter-span">sek.</div>
+              </div>
+               </div>
+          </div> 
+    
+    
+        </div>
+
+    
+   </section>
+
+  <!----------smartfony dla ciebibe------------->
+
+  <section class="smartphones">
+    <div class="smartphones-section-title">
+      <p>Smartfony dla Ciebie</p>
+    </div>
+    <div class="products-gallery" id="shop">
+     
+    </div>
+  </section>
+  <section class="pop-up">
+    <div class="add-to-basket-pop-up">
+      <span>Produkt dodany do koszyka</span>
+    </div>
+  </section>
+  <!---------------------DESKTOP Design-------------->
+  <section class="desktop-header">
+    <div class="desktop-header-container">
+      <div class="desktop-logo">
+        <!--<img src="./images/logo@2x.webp">-->
+        <img src="images3/logo_2x222-removebg-preview.png">
+      </div>
+      <div class="desktop-search-container">
+        <form id="desktop-search-bar" class="desktop-search-bar" role="search">
+          <input id="desktop-search-bar-input" type="text" role="searchbox" placeholder="Szukaj w sklepie" autocomplete="off">
+          <button id="desktop-search-button" class="desktop-search-button" type="submit" aria-label="submit button">
+              <i class="fas fa-search blue"></i>
+          </button>
+      </form>
+
+      <div class="search-results-desktop" id="search-results-desktop">
+        <div class="search-results-container-container-desktop" id="search-results-container-container-desktop">
+        <div class="search-results-container-desktop" id="search-results-container-desktop">
+      <!-- <div class="search-results-product-desktop">
+
+          <div><img src="./images/iphone-13.jpg"></div>
+           <div> <p>IPHONE 13</p> </div>
+            <div class="desktop-search-result-price-p"><p>5200.00 zł</p></div>
+
+          </div>
+          <div class="search-results-product-desktop">
+            <div><img src="./images/iphone-13.jpg"></div>
+            <div> <p>IPHONE 13</p> </div>
+             <div class="desktop-search-result-price-p"><p>5200.00 zł</p></div>
+            </div> -->
+           
+        </div>
+      </div>
+</div>
+      </div>
+
+      
+
+      <div class="desktop-user-cart">
+        <div class="desktop-contact" id="desktop-contact">
+          <img class="desktop-contact-img" id="desktop-user-img" src="./images/contact-svgrepo-com (1).svg">
+      </div>
+      <div class="desktop-cartuser-span"><span>Kontakt</span></div>
+        <div class="desktop-user" id="desktop-user">
+          <img class="desktop-user-img" id="desktop-user-img" src="./images/user-svgrepo-com (1).svg">
+      </div>
+      <div class="desktop-cartuser-span"><span>Konto</span></div>
+      <div class="desktop-cart" id="desktop-cart">
+        <img class="desktop-cart-img" src="./images/shopping-cart-svgrepo-com.svg" id="desktop-cart-img">
+        
+        <div class="desktop-cart-info" id="desktop-cart-info">
+          <span></span>
+        </div>
+      </div>
+      <div class="desktop-cartuser-span"><span>Koszyk</span></div>
+    </div>
+
+   <div class="inside-the-cart-desktop" id="insideTheCartDesktop">
+      <div class="inside-the-cart-container-desktop" id="inside-the-cart-container-desktop">
+        <div class="products-inside-desktop" id="products-inside-desktop">
+          Brak produktów w koszyku...
+        <!-- <div class="product-row-desktop" id="product-row-desktop">
+          <span class="quantity-of-the-product-desktop" id="quantity-of-the-product-desktop">2 x</span>
+          <p class="title-of-the-product-desktop" id="title-of-the-product-desktop">Huawei P20 Lite</p>
+          <span class="price-of-the-product-desktop" id="price-of-the-product-desktop">22250.00 zł</span>
+          <button class="remove-product-desktop" id="remove-product-desktop">x</button>
+         </div> -->
+                        
+        </div>
+        <hr>
+        <div class="value-and-proceed-desktop" id="value-and-proceed-desktop">
+          <div class="value-row-desktop" id="value-row-desktop">
+            <span class="total-value-of-products-desktop" id="total-value-of-products-desktop">Łączna wartość produktów</span> 
+              <span class="total-value-desktop" id="total-value-desktop">0.00 zł</span>
+          </div> 
+          <div class="proceed-to-cart-desktop" id="proceed-to-cart-desktop">
+            <button class="button proceed-to-cart-desktop" id="button-proceed-to-cart-desktop">Przejdź do koszyka</button>
+          </div>
+        </div>
+        <div class="close-desktop-cart" id="close-desktop-cart">
+          <button>X</button>
+        </div>
+      </div> 
+    </div> 
+
+  </section>
+  <section class="desktop-categories">
+    <div class="desktop-cat-container">
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>TV, Audio i</center></span><span><center>RTV</center></span>
+      </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>TELEWIZORY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+               <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>TELEWIZORY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>TELEWIZORY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>TELEWIZORY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>AGD</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>AGD do</center></span><span><center>zabudowy</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD DO ZABUDOWY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD DO ZABUDOWY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD DO ZABUDOWY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD DO ZABUDOWY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>AGD</center></span>
+        <span><center>małe</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD MAŁE</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD MAŁE</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD MAŁE</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>AGD MAŁE</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>Komputery i</center></span><span><center>tablety</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>KOMPUTERY I TABLETY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>KOMPUTERY I TABLETY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>KOMPUTERY I TABLETY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>KOMPUTERY I TABLETY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>Smartfony i</center></span><span><center>telefony</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>SMARTFONY I TELEFONY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>SMARTFONY I TELEFONY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>SMARTFONY I TELEFONY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>SMARTFONY I TELEFONY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>Foto i</center></span><span><center>kamery</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>FOTO I KAMERY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>FOTO I KAMERY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>FOTO I KAMERY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>FOTO I KAMERY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>Konsole i</center></span><span><center>gry</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>KONSOLE I GRY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>KONSOLE I GRY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>KONSOLE I GRY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>KONSOLE I GRY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>Rowery</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>ROWERY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>ROWERY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>ROWERY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>ROWERY</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>Fitness i</center></span><span><center>sport</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>FITNESS I SPORT</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>FITNESS I SPORT</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>FITNESS I SPORT</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>FITNESS I SPORT</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>Dom i</center></span><span><center>ogród</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>DOM I OGROD</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>DOM I OGROD</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>DOM I OGROD</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>DOM I OGROD</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-category">
+        <div class="desktop-category-col">
+        <span><center>Zabawki i</center></span><span><center>LEGO</center></span>
+        </div>
+        <div class="desktop-show-categories">
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>ZABAWKI I LEGO</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>ZABAWKI I LEGO</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+              <div class="desktop-cat-items-more">
+                <div class="desktop-cat-items-more-btn">
+                  <span>Więcej</span>
+                  <img src="./images/down-arrow-svgrepo-com (1).svg">
+                </div>
+                <div class="desktop-cat-items-show-more">
+                  <span>Ambilight</span>
+                  <span>Telewizory z WiFi</span>
+                  <span>Telewizory 120Hz</span>
+                  <span>Telewizory jak obraz</span>
+                  <div class="desktop-cat-items-less-btn">
+                    <span>Mniej</span>
+                    <img src="./images/down-arrow-svgrepo-com (1).svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>ZABAWKI I LEGO</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+          <div class="desktop-cat-row">
+            <div class="desktop-cat-name">
+              <span>ZABAWKI I LEGO</span>
+            </div>
+            <div class="desktop-cat-items">
+              <span>Wszystkie Telewizory</span>
+              <span>OLED</span>
+              <span>UHD/4K</span>
+              <span>Smart TV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="desktop-store-info-container">
+    <div class="desktop-store-info">
+    <div class="desktop-info-1">
+        <div class="desktop-info">
+        <img src="./images/shipping-svgrepo-com.svg">
+        <span class="desktop-store-info-text">Darmowy transport</span>
+    </div>
+        </div>
+        <div class="desktop-info-1-wider">
+            <div class="desktop-info">
+            <img src="images/down-arrow-svgrepo-com.svg">
+            <span class="desktop-store-info-text">Gwarancja lepszej ceny</span>
+        </div>
+            </div>
+            <div class="desktop-info-1">
+                <div class="desktop-info">
+                <img src="images/lock-svgrepo-com.svg">
+                <span class="desktop-store-info-text">Bezpieczne zakupy</span>
+            </div>
+                </div>
+                <div class="desktop-info-1">
+                    <div class="desktop-info">
+                    <img src="images/clock-svgrepo-com.svg">
+                    <span class="desktop-store-info-text">Dostawa jutro</span> 
+                </div>
+                    </div>
+        
+            
+</div>
+</section>
+<section class="desktop-main-slide">
+  <div class="desktop-main-slide-container">
+    <div class="desktop-main-slide-left">
+      <div class="desktop-slider">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><a href="#"><img src="./images3/1..5.jpg"></a>
+               </div>
+              <div class="swiper-slide"><a href="#"><img src="images/AVANS_sg_855x433 (1).webp"></a>
+                 </div>
+                <div class="swiper-slide"><a href="#"><img src="images/avans3_sg_855x433 (2).webp"></a>
+                    </div>
+                    
+             
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div> 
+            
+            <div class="swiper-button-prev"></div>
+          
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+    </div>
+    <div class="desktop-main-slide-right">
+      <img src="./images3/ikony_avansubezpieczenie.webp">
+      <img src="./images3/aktualne-promocje1.webp">
+      <img src="./images3/av_raty.webp">
+    </div>
+  </div>
+</section>
+
+<section class="section-with-carousel-desktop section-with-right-offset position-relative mt-5">
+       
+  <div class="carousel-wrapper-desktop">
+    <span>Smartfony dla Ciebie</span>
+    <div class="swiper-desktop">
+      
+      <div class="swiper-wrapper" id="swiper-wrapper-desktop">
+       <!-- <div class="swiper-slide">
+         <figure>
+            <img src="images3/_promo_sg-310x155.jpg" alt="">
+           
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="images3/_promo_sg-310x155_new.jpg" alt="">
+            
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="images3/_promo_sg-310x155 (1).jpg" alt="">
+            
+            
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="images3/smartwatche-i-smartbandy_promo_sg-310x155.jpg" alt="">
+            
+          </figure>
+        </div>
+        <div class="swiper-slide">
+          <figure>
+            <img src="images3/glosnik_promo_sg-310x155.jpg" alt="">           
+          </figure>
+        </div>
+         more slides here -->
+
+
+      </div>
+    </div>
+    
+    <div class="carousel-controls">
+      <button id="ccl" class="carousel-control carousel-control-left" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+          <path fill-rule="evenodd" d="M10.78 19.03a.75.75 0 01-1.06 0l-6.25-6.25a.75.75 0 010-1.06l6.25-6.25a.75.75 0 111.06 1.06L5.81 11.5h14.44a.75.75 0 010 1.5H5.81l4.97 4.97a.75.75 0 010 1.06z"></path>
+        </svg>
+      </button>
+      <button id="ccr" class="carousel-control carousel-control-right" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+          <path fill-rule="evenodd" d="M13.22 19.03a.75.75 0 001.06 0l6.25-6.25a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 10-1.06 1.06l4.97 4.97H3.75a.75.75 0 000 1.5h14.44l-4.97 4.97a.75.75 0 000 1.06z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  
+      
+    
+</section>
+ 
+
+ 
+<section class="section-with-carousel-two section-with-left-offset position-relative mt-5">
+  
+</section>
+
+<section class="promo-desktop">
+  <p class="promo-desktop-p">Promocje</p>
+  <div class="promo-desktop-main-container">
+  <div class="promo-desktop-container">
+    <div class="promo-desktop-img">
+      <img src="./images3/P1_av_380x380_16107.webp">
+    </div>
+    <div class="promo-desktop-img">
+      <img src="images3/P2_av_380x380.webp">
+    </div>
+    <div class="promo-desktop-img">
+      <div class="promo-desktop-img-33">
+      <div class="promo-desktop-img-3">
+      <img src="images3/P3_av_promo-min_380x174_16108.avif">
+    </div>
+    <div class="promo-desktop-img-3">
+      <img src="images3/P4_av_promo-min_380x174_9563.avif">
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+  <div class="see-more-promo">
+    <button class="see-more-promo-btn">Zobacz wszystkie promocje</button>
+  </div>
+</section>
+
+<section class="trust-desktop">
+  <p class="trust-desktop-p">Możesz nam zaufać!</p>
+  <div class="trust-container">
+    <div class="trust-container-content">
+      <img src="./images3/trust1.jpg">
+      <p>Awanz to marka z tradycjami - jesteśmy z Wami ponad 15 lat!</p>
+    </div>
+    <div class="trust-container-content">
+      <img src="images3/trust2.webp">
+      <p>Przez 7 dni w tygodniu zespół naszych profesjonalnych doradców jest do Twojej dyspozycji!</p>
+    </div>
+    <div class="trust-container-content">
+      <img src="images3/trust3.jpg">
+      <p>W naszym magazynie jest ponad 25 tysięcy produktów gotowych do wysyłki w ciągu 1 dnia</p>
+    </div>
+  </div>
+  <hr>
+  <div class="reviews-container">
+    <p class="reviews-p">Zobacz najnowsze opinie naszych klientów</p>
+    <div class="reviews-content">
+      <div class="reviews-content-box">
+        <div class="stars">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <p class="stars-count">5/5</p>
+        </div>
+        <div class="user-name">
+          <img src="./images3/user-profile-svgrepo-com.svg">
+          <p class="name">Robert</p>
+        </div>
+        <div class="review">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores nesciunt!.</p>
+        </div>
+      </div>
+      <div class="reviews-content-box">
+        <div class="stars">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="./images3/star-outlined-svgrepo-com.svg">
+          
+          <p class="stars-count">4/5</p>
+        </div>
+        <div class="user-name">
+          <img src="./images3/user-profile-svgrepo-com.svg">
+          <p class="name">Marian</p>
+        </div>
+        <div class="review">
+          <p>Mobis ut dolore nisi explicabo. Incidunt nostrum quisquam explicabo voluptatem enim</p>
+        </div>
+      </div>
+      <div class="reviews-content-box">
+        <div class="stars">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <img src="images3/star-svgrepo-com (2).svg">
+          <p class="stars-count">5/5</p>
+        </div>
+        <div class="user-name">
+          <img src="./images3/user-profile-svgrepo-com.svg">
+          <p class="name">Lucyna</p>
+        </div>
+        <div class="review">
+          <p>praesentium sequi sed quidem repudiandae! Ratione id quaerat harum voluptatem!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+  <!----------------------------------->
+</main>
+<footer>
+  <div class="footer-container">
+    <div class="copyright">
+      <p>Awansss.pll 2020 Wszelkie prawa zastrzeżone.</p>
+    </div>
+   <div class="hr">
+
+   </div>
+    <div class="company-info">
+      <p><center>Lorem ipsum dolor 44-100 sit amet consectetur,</center> <center>adipisicing elit. Ad tempora illum, quasi atque</center> <center>sequi numquam et at suscipit, molestias aperiam</center><center> eaque in? Fuga doloribus repudiandae optio dolor</center> <center>harum. Commodi, illum 22 343 21 23</center></p>
+    </div>
+  </div>
+</footer>
+<footer>
+  <div class="footer-container-desktop">
+    <div class="copyright-desktop">
+      <p>Awansss.pll 2020 Wszelkie prawa zastrzeżone.</p>
+    </div>
+   
+
+  
+    <div class="company-info-desktop">
+      <p>Lorem ipsum dolor 44-100 sit amet consectetur, adipisicing elit. Ad tempora illum, quasi atque sequi numquam et at suscipit<center> molestias aperiam eaque in? Fuga doloribus repudiandae optio dolorharum. Commodi, illum 22 343 21 23</center></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

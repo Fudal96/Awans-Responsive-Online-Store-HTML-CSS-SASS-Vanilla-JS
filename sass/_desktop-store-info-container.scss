@@ -1,0 +1,58 @@
+.desktop-info-1 img {
+    height: 48px;
+    margin-bottom: 7px;
+    filter: invert(34%) sepia(2%) saturate(293%) hue-rotate(53deg) brightness(95%) contrast(93%);
+    @include mqMin(768px) {
+        height: 38px;
+    }
+}
+.desktop-info-1-wider img {
+    height: 48px;
+    margin-bottom: 7px;
+    filter: invert(34%) sepia(2%) saturate(293%) hue-rotate(53deg) brightness(95%) contrast(93%);
+    @include mqMin(768px) {
+        height: 38px;
+    }
+}
+.desktop-store-info-container {
+    padding: 10px 10px;
+    margin-top: 9px;
+    @include mqMax(1023px) {
+        display: none;
+    }
+}
+
+.desktop-store-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    gap: 14px;
+}
+.desktop-info-1 {
+    width: 22%;
+}
+.desktop-info-1-wider {
+    width: 34%;
+}
+
+.desktop-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+
+.desktop-store-info-text {
+    color: #555555;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    
+   
+}
+

@@ -1,0 +1,32 @@
+.footer-container {
+    margin-top: 65px;
+    background-color: $bluecolor;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include mqMin(1024px) {
+        display: none;
+    }
+
+    .copyright {
+        font-size: 13px;
+        margin-bottom: 13px;
+        font-weight: 200;
+        padding-top: 20px;
+    }
+
+   .hr {
+    display: flex;
+    width: 90%;
+    height: 0.3px;
+    background-color:  gray;
+    margin-bottom: 13px;
+   }
+    .company-info {
+        font-size: 13px;
+        font-weight: 100;
+        padding-bottom: 15px;
+    }
+}

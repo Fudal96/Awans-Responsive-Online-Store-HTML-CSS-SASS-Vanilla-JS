@@ -1,0 +1,45 @@
+.desktop-main-slide {
+    width: 100vw;
+    height: 465px;
+    background: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    @include mqMax(1023px) {
+        display: none;
+    }
+
+    .desktop-main-slide-container {
+        width: 85%;
+        height: 420px;
+        display: grid;
+        grid-template-columns: repeat(2, 71% 29%);
+        gap: 15px;
+        
+        
+    }
+
+    .desktop-main-slide-left {
+        height: 420px;
+        position: relative;
+
+    }
+    .desktop-main-slide-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 420px;
+    }
+    .desktop-main-slide-right img {
+        height: 129px;
+        width: 100%;
+    }
+
+    .desktop-main-slide-left img {
+        width: 100%;
+        height: 420px;
+    }
+
+    
+}

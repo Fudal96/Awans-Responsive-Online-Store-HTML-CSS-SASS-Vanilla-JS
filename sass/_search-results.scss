@@ -1,0 +1,107 @@
+.search-results {
+    display: none;
+    width: 90%;
+    height: auto;
+    -webkit-box-shadow: 0px 4px 19px 0px rgba(66, 68, 90, 1);
+-moz-box-shadow: 0px 4px 19px 0px rgba(66, 68, 90, 1);
+box-shadow: 0px 4px 19px 0px rgba(66, 68, 90, 1);
+    justify-content: flex-start;
+    margin: auto;
+    
+
+    .search-results-container {
+        margin-top: 10px;
+        margin-left: 5px;
+        padding: 2px 2px;
+    }
+
+    .search-results-product {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 6px;
+        @include mqMin(768px) {
+            margin-bottom: 12px;
+        }
+        
+    }
+
+    .search-results-product img {
+        width: 50px;
+        height:fit-content;
+        margin-right: 5px;
+        @include mqMin(500px) {
+            width: 70px;
+        }
+        @include mqMin(768px) {
+            width: 95px;
+        }
+    }
+    .search-results-product p {
+        font-weight: 600;
+        font-size: 17px;
+        width: 190px;
+        @include mqMax(370px) {
+            width: 150px;
+        }
+        @include mqMax(331px) {
+            width: 145px;
+        }
+        @include mqMin(410px) {
+            width: 210px;
+        }
+        @include mqMin(431px) {
+            width: 230px;
+        }
+        @include mqMin(460px) {
+            width: 255px;
+        }
+         @include mqMin(500px) {
+            font-size: 20px;
+        }
+        @include mqMin(548px) {
+            width: 290px;
+        }
+        @include mqMin(601px) {
+            width: 340px;
+        }
+        @include mqMin(651px) {
+            width: 390px;
+        }
+        @include mqMin(700px) {
+            width: 430px;
+        }
+        @include mqMin(768px) {
+            font-size: 24px;
+        }
+        @include mqMin(797px) {
+            width: 486px;
+        }
+        @include mqMin(900px) {
+            width: 580px;
+        }
+        @include mqMin(971px) {
+            width: 630px;
+        }
+    }
+    .search-results-product span {
+        color: $orangecolor;
+        font-weight: 600;
+        font-size: 17px;
+        @include mqMin(500px) {
+            font-size: 20px;
+        }
+        @include mqMin(768px) {
+            font-size: 24px;
+        }
+    }
+    
+}
+
+.search-results.active {
+        display: flex;
+        @include mqMin(1024px) {
+            display: none;
+        }
+    }

@@ -1,0 +1,134 @@
+.smartphones {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+    @include mqMin(1024px) {
+        display: none;
+    }
+}
+
+.smartphones-section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    margin-left: 4%;
+}
+
+.products-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.smartphone img {
+    cursor: pointer;
+    width: 150px;
+    @include mqMax(364px) {
+        width: 100px;
+    }
+}
+
+.smartphone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //border: 1px solid red;
+    width: 170px;
+    @include mqMax(364px) {
+        width: 140px;
+    }
+}
+
+
+.product-name {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.product-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 18px;
+    @include mqMax(364px) {
+        font-size: 14px;
+    }
+}
+
+
+.smartphone.on-sale .price {
+    color: black;
+    font-size: 15px;
+    position: relative;
+    @include mqMax(364px) {
+        font-size: 13px;
+    }
+  }
+
+.smartphone.on-sale .price::before {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: black;
+}
+.price-sale {
+    display: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FF6000;
+    @include mqMax(364px) {
+        font-size: 14px;
+    }
+}
+
+.smartphone.on-sale .price-sale  {
+    display: block;
+}
+
+.product-add-to-basket-btn {
+    margin-top: 2px;
+    cursor: pointer;
+    font-size: 17px;
+    background: #FF6000;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.product-item-sale-info {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #0A4595;
+    color: white;
+    padding: 0.15rem 0.30rem;
+    border-radius: 5px;
+}
+
+.smartphone.on-sale .product-item-sale-info {
+    display: block;
+}
+
+
+
+
+
+

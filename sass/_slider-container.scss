@@ -1,0 +1,16 @@
+
+
+.slider {
+    margin-top: 10px;
+    @include mqMin(1024px) {
+        display: none;
+    }
+}
+
+.slider img {
+    width: 100%;
+}
+
+.side-swipe img {
+    width: 30%;
+}

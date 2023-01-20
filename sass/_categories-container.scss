@@ -1,0 +1,118 @@
+.tv {
+    filter: invert(95%) sepia(90%) saturate(5783%) hue-rotate(79deg) brightness(89%) contrast(91%);
+}
+.agd {
+    filter: invert(56%) sepia(9%) saturate(3840%) hue-rotate(281deg) brightness(74%) contrast(100%);   
+}
+
+.agd-do-zabudowy {
+    filter: invert(66%) sepia(41%) saturate(590%) hue-rotate(156deg) brightness(96%) contrast(94%);
+}
+.agd-małe {
+    filter: invert(54%) sepia(96%) saturate(2996%) hue-rotate(323deg) brightness(97%) contrast(93%);
+}
+.komputery {
+    filter: invert(35%) sepia(45%) saturate(432%) hue-rotate(215deg) brightness(94%) contrast(90%);
+}
+.smartfony {
+    filter: invert(74%) sepia(74%) saturate(1255%) hue-rotate(13deg) brightness(107%) contrast(83%);
+}
+.foto {
+    filter: invert(55%) sepia(83%) saturate(3931%) hue-rotate(226deg) brightness(98%) contrast(91%);
+}
+.gaming {
+    filter: invert(96%) sepia(89%) saturate(7112%) hue-rotate(323deg) brightness(100%) contrast(96%);
+}
+.fitness {
+    filter: invert(78%) sepia(48%) saturate(1241%) hue-rotate(154deg) brightness(91%) contrast(86%);
+}
+.dom {
+    filter: invert(73%) sepia(47%) saturate(368%) hue-rotate(67deg) brightness(92%) contrast(90%);
+}
+.promocje {
+    filter: invert(24%) sepia(65%) saturate(6366%) hue-rotate(343deg) brightness(99%) contrast(104%);
+}
+
+.categories-container {
+    width: 90%;
+    margin: auto;
+    min-height: 500px;
+    @include mqMin(1024px) {
+        display: none;
+    }
+}
+
+.categories {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category {
+    width: 33.33%;
+    min-height: 100px;
+    border: 1px solid rgba(85, 85, 85, .39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.category img {
+    height: 38px;
+    width: 48px;
+    margin-top: 13px;
+    margin-bottom: 16px;
+    @include mqMin(768px) {
+        height: 42px;
+        width: 54px;
+    }
+}
+
+.category-name {
+    color: #555555;
+    font-size: 12px;
+    @include mqMin(768px) {
+        font-size: 14px;
+    }
+}
+.category-name-2 {
+    color: #555555;
+    font-size: 12px;
+    @include mqMin(768px) {
+        font-size: 14px;
+    }
+}
+
+.category:first-child,
+.category:nth-child(2),
+.category:nth-child(3),
+.category:nth-child(4),
+.category:nth-child(5),
+.category:nth-child(6),
+.category:nth-child(7),
+.category:nth-child(8),
+.category:nth-child(9),
+.category:nth-child(10),
+.category:nth-child(11)
+ {
+    border-bottom: none;
+}
+
+.category:first-child,
+.category:nth-child(2),
+.category:nth-child(4),
+.category:nth-child(5),
+.category:nth-child(7),
+.category:nth-child(8),
+.category:nth-child(10),
+.category:nth-child(11),
+.category:nth-child(13)
+ {
+    border-right: none;
+}
+
+.category:last-child {
+    width: 33.40%;
+}

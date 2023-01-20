@@ -1,0 +1,192 @@
+.section-with-carousel-desktop {
+    background-color: white;
+    @include mqMax(1023px) {
+        display: none;
+    }
+}
+
+.carousel-wrapper-desktop {
+  //border: 1px solid red;
+  padding: 20px 15px;
+  position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}
+
+.swiper-desktop {
+  //border: 1px solid green;
+  margin-top: 20px;
+  padding: 13px 5px;
+}
+
+.carousel-wrapper-desktop span {
+  
+  margin-left: 50px;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.section-with-carousel-desktop .swiper-slide {
+  //border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+/*.swiper-desktop {
+  border: 1px solid red;
+  padding: 20px 15px;
+  position: relative;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+}*/
+
+
+
+/*.section-with-carousel-desktop .swiper-slide figure {
+    position: relative;
+    overflow: hidden;
+  }*/
+   
+  .section-with-carousel-desktop .swiper-slide img {
+    
+   width: 120px;
+   height: 120px;
+   @include mqMin(1200px) {
+    width: 145px;
+    height: 145px;
+   }
+   @include mqMin(1496px) {
+    width: 150px;
+    height: 150px;
+   }
+  }
+   
+
+figure {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+   
+  .section-with-carousel-desktop .carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 12;
+    
+    
+  }
+   
+  .section-with-carousel-desktop .carousel-controls .carousel-control {
+    opacity: 0.65;
+    transition: opacity 0.3s;
+   
+    
+  }
+   
+  .section-with-carousel-desktop .carousel-controls .carousel-control:hover {
+    opacity: 1;
+  }
+
+  .swiper-slide.on-sale .price-desktop {
+    color: black;
+    font-size: 15px;
+    position: relative;
+    @include mqMax(364px) {
+        font-size: 13px;
+    }
+  }
+
+.swiper-slide.on-sale .price-desktop::before {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: black;
+}
+
+.swiper-slide.on-sale .price-sale-desktop  {
+  display: block;
+}
+
+.swiper-slide.on-sale .product-item-sale-info {
+    display: block;
+}
+
+.product-name-desktop {
+  font-weight: 700;
+  margin-bottom: 6px;
+  @include mqMin(1496px) {
+    font-size: 19px;
+   }
+}
+
+.product-price-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.price-desktop {
+  font-weight: 600;
+  font-size: 18px;
+  @include mqMin(1496px) {
+    font-size: 20px;
+   }
+ 
+}
+
+.price-sale-desktop {
+  display: none;
+  font-weight: 600;
+  font-size: 18px;
+  color: #FF6000;
+  @include mqMin(1496px) {
+    font-size: 20px;
+   }
+}
+
+.product-add-to-basket-btn-desktop {
+  margin-top: 2px;
+  cursor: pointer;
+  font-size: 17px;
+  background: #FF6000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  @include mqMin(1496px) {
+    font-size: 20px;
+    padding: 0.75rem 1.25rem;
+   }
+}
+.product-add-to-basket-btn-desktop:hover,
+.product-add-to-basket-btn-desktop:focus {
+  opacity: 0.9;
+}
+
+.product-item-sale-info-desktop {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #0A4595;
+  color: white;
+  padding: 0.15rem 0.30rem;
+  border-radius: 5px;
+}
