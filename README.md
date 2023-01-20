@@ -1,1 +1,1 @@
-Fully Responsive and Functional E-com Store
+HTML, CSS(SASS), Vanilla JavaScript
