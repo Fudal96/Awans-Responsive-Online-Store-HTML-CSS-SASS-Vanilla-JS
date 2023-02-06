@@ -33,6 +33,9 @@
         justify-content: space-between;
         flex-basis: 33.33%;
         gap: 30px;
+        @include mqMin(1500px) {
+            justify-content: space-around;
+        }
     }
 
    
